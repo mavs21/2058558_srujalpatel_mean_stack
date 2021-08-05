@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simply Blogging</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="blogpost.js"></script>
+
+<style>
+        h2 {
+            text-align: center;
+        }
+
+        h3{
+            word-wrap: break-word;
+        }
+
+        .blogpost {
+            border: solid 5px rgb(253, 177, 177);
+            border-spacing: 20px;
+        }
+
+        .blogpad {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .div1{
+
+            background-color: lightblue;
+            height: 800%;
+
+        }
+
+</style>
+
+  </head>
+  <body onload="displayData()">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        
+        <a class="navbar-brand" href="#">Simply Blogging</a>
+      
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Add Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">AboutUs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+
+  <div class="container div1">
+
+
+    <form class="form-group">
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-2" style="text-align: right;">
+            <label>Title : </label>
+          </div>
+          <div class="col-3">
+            <input type="text" class="form-control" id="title" placeholder="Enter Title" name="title">
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-2" style="text-align: right;">
+              <label>Articles : </label>
+            </div>
+            <div class="col-3">
+              <textarea class="form-control" id="article" name="article" rows="3" cols="30"></textarea>
+            </div>
+          </div>
+
+          <br>
+          <br>
+
+        <div class="row">
+            <div class="col-2" style="text-align: right;">
+              <label>Add Image : </label>
+            </div>
+            <div class="col-3">
+              <input type="text" class="form-control" id="img" placeholder="Enter Image URL" name="image">
+            </div>
+          </div>
+          <br>
+          <br>
+        <div class="row">
+            <div class="col">
+              <input type="button" class="btn-link btn-success" id="img" placeholder="Enter Image URL" name="image" value="Add Blog" onclick="addPost()"> 
+            </div>
+        </div>
+      </form>
+
+    <br>
+    <br>
+
+<div class="row blogpad row justify-content-around" id="blogposts">
+              
+</div>
+</div>
+</body>
+</html>
