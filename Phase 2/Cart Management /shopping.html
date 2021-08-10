@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js"></script>
+  
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h1>Shopping Cart</h1>
+          </div>
+        </div>
+      </nav>
+    <div class="container4">
+        <p><label class="lbl1">Cart Size:</label>
+        <label id="cartlength" class="lbl1"></label><br>
+        <a class="btn btn-success btn-block" href="Checkout.html" class="lbl2">Checkout</a></p>
+    </div> 
+  
+
+ 
+    <div class="row px-5 pt-5">
+      <div class="col-md-4 mt-4 mt-sm-0 card-container">
+        <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-0">
+          <img class="img-fluid d-block mx-auto" src="https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipad-pro-spring21_hero_04202021_big.jpg.large.jpg" alt="Ipad">
+          <div class="card-body p-4 py-0 h-xs-440p">
+            <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Apple Ipad Pro</h5>
+            <p class="price">$500.00</p>
+          </div>
+          <p class="btn w-100 px-4 mx-auto">
+            <input type="submit" class="btn btn-dark btn-lg w-100" name="add-button" value="Add" onclick="aItem('Apple Ipad Pro', 500)">
+          </p>
+        </div>
+      </div>
+  
+      <div class="col-md-4 mt-4 mt-sm-0 card-container">
+        <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-0">
+          <img class="img-fluid d-block mx-auto" src="https://www.apple.com/newsroom/images/product/watch/standard/Apple_delivers-apple-watch-series-6_09152020_big.jpg.large.jpg" alt="Apple Watch">
+          <div class="card-body p-4 py-0 h-xs-440p">
+            <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Apple Watch</h5>
+            <p class="price">$400.00</p>
+          </div>
+          <p class="btn w-100 px-4 text-center mx-auto">
+            <input type="submit" class="btn btn-dark btn-lg w-100" name="add-button" value="Add" onclick="aItem('Apple Watch', 400)"></p>
+        </div>
+      </div>
+  
+      <div class="col-md-4 mt-4 mt-sm-0 card-container">
+        <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-0">
+          <img class="img-fluid d-block mx-auto" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airtag-double-select-202104_FMT_WHH?wid=2000&hei=2000&fmt=jpeg&qlt=80&.v=1617761672000" alt="tag">
+          <div class="card-body p-4 py-0 h-xs-440p">
+            <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Air Tag</h5>
+            <p class="price">$30.00</p>
+          </div>
+          <p class="btn w-100 px-4 mx-auto">
+            <input type="submit" class="btn btn-dark btn-lg w-100" name="add-button" value="Add" onclick="aItem('Air Tag', 30)"></p>
+  
+  
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-4 mt-sm-0 card-container">
+        <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-0">
+          <img class="img-fluid d-block mx-auto" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MU8F2?wid=1144&hei=1144&fmt=jpeg&qlt=80&.v=1540596407165" alt="Apple Pencil">
+          <div class="card-body p-4 py-0 h-xs-440p">
+            <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Mission T-Shirts</h5>
+            <p class="price">$100.00</p>
+          </div>
+          <p class="btn w-100 px-4 mx-auto">
+            <input type="submit" class="btn btn-dark btn-lg w-100" name="add-button" value="Add" onclick="aItem('Apple Pencil', 100)"></p>
+  
+  
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,73 @@
+body {
+    background: #f1f1f1;
+  }
+  
+  .card.product .btn {
+    bottom: 1.5rem;
+    max-width: 80%;
+  }
+  
+  .price {
+    font-size: 1.75rem;
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* JSFiddle layout display fix only, don't use */
+  body {
+    min-height: 620px;
+  }
+
+  .button{
+
+    text-align: center;
+    color: #0c5850;
+    text-decoration: underline;
+
+  }
+
+  h1{
+
+    color: aqua;
+    text-decoration: underline;
+  }
+
+  h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+div.container4 {
+    height: 5em;
+    position: relative 
+  }
+
+div.container4 p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+.lbl1{
+    font-size: 190%;
+    font-family: monospace;
+}
+
+.lbl2{
+    font-size: 190%;
+    font-family: fantasy;
+    font-style: italic;
+}
+
+.lbl3{
+
+    text-decoration: underline;
+    font-weight: 900;
+
+}
