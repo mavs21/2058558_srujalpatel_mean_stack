@@ -1,0 +1,93 @@
+<div *ngIf="lFlag" class="container">
+
+    <h2>Login Form</h2>
+
+    <form #loginRef="ngForm" (ngSubmit)="ckUser(loginRef)" class="box">
+     
+        <input type="text" name="user" placeholder="Username" ngModel required><br>
+       
+        <input type="password" name="pass" placeholder="Password" ngModel required>
+        <br>
+        <br>
+        
+        <input type="submit" value="Login" [disabled]="loginRef.invalid">
+        
+        <br>
+        
+        <input type="submit" value="Sign Up" (click)="toRegPage()">
+
+    </form>
+    <br>
+    <br>
+
+</div>
+
+<div *ngIf="rFlag" class="container">
+
+    <h2>Registration Form</h2>
+
+    <form #registerRef="ngForm" (ngSubmit)="addUser(registerRef)" class="box1">
+    
+    <input type="submit" value="Login Page" (click)="toLoginPage()">
+    <br>
+    <br>
+
+
+    <label>First name:</label>
+
+    <input type="text" name="fname" ngModel required>
+    
+    <label>Last name:</label>
+        
+    <input type="text" name="lname" ngModel required>
+    
+    <label>Username:</label>
+        
+    <input type="text" name="user" ngModel required>
+    
+        
+    <label>Password:</label>
+        
+    <input type="password" name="pass" ngModel required>
+    
+    <br>
+    <input type="submit" value="Register" [disabled]="registerRef.invalid">
+    
+    <input type="reset" value="reset">
+
+    </form>
+
+</div>
+<div *ngIf="pFlag" class="container">
+
+    <h2 >My Protfolio</h2>
+
+    <br>
+    <br>
+
+    <label class="label1">Welcome, {{presentusername}}</label>
+    <br>
+    <br>
+
+    <form #contactRef="ngForm" (ngSubmit)="addCont(contactRef)" class="box1">
+
+        <label>Contact Name :</label>
+
+        <input type="text" name="contactname" ngModel required>
+        <br>
+
+        <label>Phone No :</label>
+        
+        <input type="text" name="phone" ngModel required><br>
+        
+        <input type="submit" value="Save" [disabled]="contactRef.invalid">
+
+    </form>
+
+</div>
+
+<div *ngIf="cFlag" id="contact_list" class="container1 copyright" >
+
+    
+
+</div>
