@@ -1,0 +1,96 @@
+<div class="div1">
+
+    <h1 class="he">Task Tracker</h1>
+
+    <hr>
+
+    <form #empRef="ngForm" (ngSubmit)="storeTask(empRef)">
+
+
+        <br>
+        <h2 class="he1">To-do tasks</h2>
+        <br>
+
+
+        <mat-form-field appearance="outline">
+        
+        <mat-label>ID: </mat-label>
+        
+        <input matInput  name="id" ngModel>
+        
+      </mat-form-field>
+      <br>
+
+      <mat-form-field appearance="outline">
+
+        <mat-label>Name: </mat-label>
+
+        <input matInput  name="name" ngModel>
+
+      </mat-form-field>
+      <br>
+
+      <mat-form-field appearance="outline">
+      
+        <mat-label>Task Name: </mat-label>
+        
+        <input matInput name="task" ngModel>
+
+      </mat-form-field>
+      <br>
+
+      <mat-form-field appearance="outline">
+
+        <mat-label>Dead Line: </mat-label>
+
+        <input matInput type="date"  name="deadline" ngModel>
+
+      </mat-form-field>
+      <br>
+      <br>
+
+      <section>
+        <div class="example-button-row">
+          <button mat-raised-button color="primary">Submit</button>
+          <button mat-raised-button type="reset" color="primary">Reset</button>
+        </div>
+      </section>
+
+    </form>
+
+  </div>
+
+    <br>
+    <br>
+
+
+<div class="div1">
+<hr>
+<h2 class="he2">To-do-List</h2>
+<hr>
+<br>
+
+
+<table border="5px">
+    <tr>
+      <th>Emp Id</th>
+      <th>Name</th>
+      <th>Task</th>
+      <th>Deadline</th>
+    </tr>
+    <tr *ngFor="let row of dataCap">
+      <td>{{row.id}}</td>
+      <td>{{row.name}}</td>
+      <td>{{row.task}}</td>
+      <td>{{row.deadline}}</td>
+    </tr>
+  </table>
+
+
+
+</div>
+
+
+
+
+

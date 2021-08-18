@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-grid-tile {
+    background: lightblue;
+  }
+
+  table {
+    width: 100%;
+    text-align: center;
+  }
+
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+
+  form { 
+    margin: 0 auto; 
+    width:250px;
+    text-align: center;
+    }
+
+.div1{
+
+    width:800px; 
+    margin:0 auto;
+
+}
+
+.he{
+  color: rgb(207, 87, 87);
+  text-decoration: underline;
+  text-align: center;
+ 
+}
+.he1{
+  color: rgb(43, 105, 175);
+  text-decoration: underline;
+  text-align: center;
+ 
+}
+.he2{
+  color: rgb(165, 117, 204);
+  text-decoration: underline;
+  text-align: center;
+ 
+}
