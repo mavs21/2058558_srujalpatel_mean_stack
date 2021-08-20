@@ -1,0 +1,38 @@
+
+<p class="a">
+ All The Best for Exam
+</p>
+<hr>
+
+
+<div *ngFor="let q of question; let index=index">
+
+    <mat-card class="mc">
+
+       <p class="b">{{index+1}}. {{question[index].ques}}</p>
+        
+    </mat-card>
+
+    <form>
+        <mat-card *ngFor="let option of question[index].options; let i = index" class="m">
+             
+        <input type="radio"  name="radiobutton" id={{i}} (change)="changeOptions(index,option)">
+            
+        <label> {{option}} </label>
+
+        </mat-card>
+
+    </form>
+
+    <br>
+
+</div>
+
+
+<div class="main-div1">
+
+    <button mat-raised-button color="primary" (click)=onSub()>Submit Quiz</button>
+    
+</div>
+    
+

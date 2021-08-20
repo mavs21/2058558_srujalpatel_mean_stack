@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.example-card {
+    max-width: 400px;
+    align-items: center;
+  }
+  
+  .example-header-image {
+    background-image: url('https://d1ymz67w5raq8g.cloudfront.net/Pictures/480xany/6/5/5/509655_shutterstock_1506580442_769367.jpg');
+    background-size: cover;
+  }
+
+  .main-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .main-div1 {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.a{
+    text-align: center;
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150%;
+    margin-top: 30px;
+    font-style: italic;
+    /* font-weight: bold; */
+  
+}
+
+p.b{
+    /* text-align: center; */
+    /* text-decoration: underline; */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 150%;
+    font-weight: bold;
+    
+}
+fieldset {
+    background-color:rgb(131, 155, 147);
+  }
+
+.mc{
+    background-color: rgb(173, 174, 216);
+}
+
+.mat-card.m {
+    background: rgb(196, 218, 215);
+    color: rgba(0,0,0,.87);
+}
+
+/* end page */
+
+.true {
+
+    color: rgb(40, 212, 40);
+
+  }
+  .false {
+    color: rgb(212, 9, 9);
+  }
+  .resultClass {
+    margin: auto;
+    width: 70%;
+    top: 100%;
+    text-align: center;
+  }
+
+  .mat-card.b {
+    background: rgb(95, 156, 212);
+    text-align: center;
+    
+}
+
+.mat-card.r {
+    background: rgb(231, 160, 66);
+    text-align: center;
+    
+}
+
+div.r {
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28px;
+}
+
+ 

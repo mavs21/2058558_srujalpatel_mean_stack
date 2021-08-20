@@ -1,0 +1,94 @@
+[
+    {
+        "id":1,
+        "ques": "Indian played first test match against?",
+        "options":["Australia","Pakistan","England","South Africa"],
+        "answer":"England",
+        "selectedans":""
+
+    },
+
+    {
+        "id":2,
+        "ques": "First World Cup win by India in which year?",
+        "options":["1983","1987","2000","2004"],
+        "answer":"1983",
+        "selectedans":""
+
+    },
+
+    {
+        "id":3,
+        "ques": "Current Captain of indian team?",
+        "options":["Virat Kohli","MS Dhoni","Rohit Sharma","KL Rahul"],
+        "answer":"Virat Kohli",
+        "selectedans":""
+
+    },
+
+    {
+        "id":4,
+        "ques": "Who was the Indian captain in ICC World Cup 1983?",
+        "options":["Madan Lal","Roger Binny","Sunil Gavaskar","Kapil Dev"],
+        "answer":"Kapil Dev",
+        "selectedans":""
+
+    },
+
+    {
+        "id":5,
+        "ques": "Which Indian player had scored highest run in One Day cricket in 2018?",
+        "options":["Virat Kohli","MS Dhoni","Rohit Sharma","KL Rahul"],
+        "answer":"Virat Kohli",
+        "selectedans":""
+
+    },
+
+    {
+        "id":6,
+        "ques": "How many times have India won the World Cup?",
+        "options":["2","3","1","4"],
+        "answer":"2",
+        "selectedans":""
+
+    },
+
+    {
+        "id":7,
+        "ques": "How far did India go in the 2015 World Cup?",
+        "options":["Final","Semi-Final","Quater-Final","None of the Above"],
+        "answer":"Semi-Final",
+        "selectedans":""
+
+    },
+
+    {
+        "id":8,
+        "ques": "Current Kit Sponsor of Indian Cricket Team",
+        "options":["Byjus","MPL","Nike","Puma"],
+        "answer":"MPL",
+        "selectedans":""
+
+    },
+
+    {
+        "id":9,
+        "ques": "Highest run scorer indian cricket?",
+        "options":["Virat Kohli","MS Dhoni","Rohit Sharma","Sachin Tendulkar"],
+        "answer":"Sachin Tendulkar",
+        "selectedans":""
+
+    },
+
+    {
+        "id":10,
+        "ques": "Who won the ICC Champions Trophy in 2013?",
+        "options":["India","England","Australia","Sri Lanka"],
+        "answer":"India",
+        "selectedans":""
+
+    }
+
+
+
+]

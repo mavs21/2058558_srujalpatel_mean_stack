@@ -1,0 +1,57 @@
+
+<p class="a">
+    Review Quiz
+</p>
+<hr>
+
+<div>
+
+<mat-card class="b">
+   <div *ngFor="question of questionsFromChild; let index = index">
+       
+    <div *ngIf="questionsFromChild[index].selectedans == questionsFromChild[index].answer">
+
+        <p>{{index+1}}. {{questionsFromChild[index].ques}}</p>
+
+        <p class="true">{{questionsFromChild[index].selectedans}}</p>
+        
+    </div>
+
+    <div *ngIf="questionsFromChild[index].selectedans != questionsFromChild[index].answer">
+        
+        <p>{{index+1}}. {{questionsFromChild[index].ques}}</p>
+            
+        <p class="false">{{questionsFromChild[index].selectedans}}</p>
+
+    </div>
+        
+   </div>
+
+</mat-card>
+
+
+<div class="r">
+
+<mat-card class="r">
+        
+    <p class="a">Your Total Score: {{correct}}/{{total}}</p>
+
+    <p class="a">Result: {{result}}</p>
+
+
+    <div class="main-div1">
+
+        <button mat-raised-button color="primary" (click)=onlogout()>Exit</button>
+    
+    </div>
+
+</mat-card>
+    
+</div>
+
+
+    
+</div>
+
+    
+
