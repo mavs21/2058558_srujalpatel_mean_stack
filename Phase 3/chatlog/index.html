@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat Log</title>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+
+        var socket = io();
+
+        function sMsg(){
+        
+            var name = document.getElementById("name").value;
+
+            var msg = document.getElementById("message").value;
+
+            socket.emit("Name",name);
+
+            socket.emit("Message",msg);
+        }
+    
+    </script>
+
+<style>
+    .div1 {
+      margin-bottom: 10px;
+      border: 5px solid rgb(9, 51, 105);
+      padding-left: 500px;
+    }
+    label {
+      display: inline-block;
+      width: 150px;
+      text-align: right;
+    }
+    h2{
+        /* text-align: center; */
+        text-decoration: underline;
+        padding-left: 200px;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="div1">
+
+    <h2>CHAT BOX</h2>
+    <br>
+    <br>
+
+
+
+    <label>Name: </label>
+    <input type="text" id="name" name="name">
+    <br>
+    <br>
+    
+    <label>Message: </label>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    <br>
+    <br>
+
+    <input type="button" id="submit" value = "send" onclick="sMsg()" style="position: fixed; left: 620px;">
+    <br>
+    <br>
+    
+</div>
+
+</body>
+</html>
